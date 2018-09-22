@@ -2,7 +2,8 @@
   "require": {
     "craftcms/cms": "^3.0.0",
     "vlucas/phpdotenv": "^2.4.0",
-    "topshelfcraft/environment-label": "3.1.4"
+    "topshelfcraft/environment-label": "3.1.4",
+    "craftcms/redactor": "2.1.6"
   },
   "autoload": {
     "psr-4": {
