@@ -1,0 +1,13 @@
+<article>
+  <h1>{{ entry.title }}</h1>
+  {% set topics = entry.topics.all() %}
+  {% if topics|length %}
+    <ul>
+      {% for topic in topics %}
+        <li>
+          {{ topic.title }}
+        </li>
+      {% endfor %}
+    </ul>
+  {% endif %}
+</article>
