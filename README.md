@@ -9,14 +9,12 @@ CraftCMS 3 for work and for pleasure
 1. run `brew install composer`
 2. run `composer install`
 
-#### using MAMP w/ homebrew cask and postgres via Postgres.app:
+#### using MAMP and postgres via homebrew:
 1. `brew cask install mamp`
 2. 'MAMP' > Preferences > Web Server > set document root to `.../craft-site/web/`
     * apache works for our purposes out-of-the-box
     * **TODO:** nginx needs more config
-3. download and install Postgres app from https://postgresapp.com/
-    * note Postgres.app default settings [here](https://postgresapp.com/#installing-postgresapp)
-    * **OPTIONAL:** include provided [cli tools](https://postgresapp.com/documentation/cli-tools.html) in your PATH, e.g. `PATH=$PATH:/Applications/Postgres.app/Contents/Versions/latest/bin`
+3. `brew install postgres`
 
 #### db [security key](https://craftcms.stackexchange.com/a/23230/8831), other environment settings:
 Populates values in your `.env` file, excluded from version control
@@ -26,4 +24,5 @@ Populates values in your `.env` file, excluded from version control
 ## run
 
 **TODO:** more detail
-1. but basically start mamp servers, start postgres
+1. `brew services start postgresql`
+2. start mamp servers
